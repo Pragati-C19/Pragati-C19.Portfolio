@@ -1,7 +1,7 @@
 
 import Link from 'next/link';
 import HeroSection from '../components/shared/hero-section';
-import ProjectsGrid from '../components/projects/ProjectsGrid';
+import ProjectsGrid from '../components/projects/project-cards';
 import { ProjectsProvider } from '../context/ProjectsContext';
 import Button from '../components/reusable/Button';
 
