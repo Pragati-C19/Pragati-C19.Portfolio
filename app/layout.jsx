@@ -1,16 +1,17 @@
-import "./globals.css";
+// RootLayout for all pages.
+
+import React from "react";
+import "../styles/globals.css";
 
 export const metadata = {
-  title: "pragati-c19.portfolio",
+  title: "Pragati Chothe | Full Stack Developer and UI/UX Designer",
   description: "This is Pragati CHothe's Portfolio",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className='antialiased'
-      >
+      <body>
         {children}
       </body>
     </html>

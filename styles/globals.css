@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+/* TODO: Adding Responsive CSS is Remaining */
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
