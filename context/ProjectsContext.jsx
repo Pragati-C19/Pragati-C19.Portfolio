@@ -2,7 +2,7 @@
 "use client"; // Adding this directive to make it a Client Component
 
 import { useState, createContext } from 'react';
-import { projectsData } from '../data/projects';
+import { projectsData } from '../data/my-projects';
 
 // Create projects context
 export const ProjectsContext = createContext();
