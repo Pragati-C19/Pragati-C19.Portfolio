@@ -2,10 +2,9 @@
 "use client"; // Adding this directive to make it a Client Component
 
 const selectOptions = [
-	'Web Application',
-	'Mobile Application',
+	'Full Stack Development',
+	'Web Development',
 	'UI/UX Design',
-	'Branding',
 ];
 
 const ProjectsFilter = ({ setSelectProject }) => {

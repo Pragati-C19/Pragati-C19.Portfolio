@@ -7,7 +7,7 @@ import Footer from "@/components/homepage/footer";
 
 export const metadata = {
   title: "Pragati Chothe | Full Stack Developer and UI/UX Designer",
-  description: "This is Pragati CHothe's Portfolio",
+  description: "This is Pragati Chothe's Portfolio",
 };
 
 export default function RootLayout({ children }) {

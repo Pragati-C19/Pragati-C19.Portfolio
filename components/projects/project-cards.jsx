@@ -78,9 +78,10 @@ const ProjectCards = () => {
                   <Image
                     src={project.image}
                     alt={`${project.title} Screenshot`}
-                    layout="fill" 
-                    objectFit="cover" 
+                    width={500}
+                    height={300}
                     className={styles.image}
+                    style={{ objectFit: "cover" }}
                   />
                 )}
               </div>

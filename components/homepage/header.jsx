@@ -6,7 +6,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { FiGrid, FiMinimize } from "react-icons/fi";
+import {FiGrid, FiMinimize } from "react-icons/fi";
 import { TbBookDownload } from "react-icons/tb";
 import Logo from "../../public/assets/home-page.png";
 
