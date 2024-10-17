@@ -1,4 +1,4 @@
-// Header Page
+// Header Section
 
 "use client"; // Making it a Client Component
 

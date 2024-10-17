@@ -2,8 +2,8 @@
 
 import React from "react";
 import "../styles/globals.css";
-import Header from "@/components/shared/header";
-import Footer from "@/components/shared/footer";
+import Header from "@/components/homepage/header";
+import Footer from "@/components/homepage/footer";
 
 export const metadata = {
   title: "Pragati Chothe | Full Stack Developer and UI/UX Designer",

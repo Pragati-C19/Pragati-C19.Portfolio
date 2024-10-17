@@ -5,13 +5,13 @@
 /* TODO: Adding Responsive CSS is Remaining */
 
 :root {
-  --background: #ffffff;
-  --foreground: #838383f7;
+  --background: #dee9fb;
+  --foreground: #ededed;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #bae3f8f7;
+    --background: #dee9fb;
     --foreground: #ededed;
   }
 }
