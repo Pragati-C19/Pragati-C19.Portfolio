@@ -1,14 +1,12 @@
 
 "use client"; // Adding this directive to make it a Client Component
 
-import useThemeSwitcher from '../../hooks/useThemeSwitcher';
 import { FiArrowDownCircle } from 'react-icons/fi';
 import Image from 'next/image'; 
 import ProfileImage from '@/public/profile-image.png'
 import { motion } from 'framer-motion';
 
 const HeroSection = () => {
-	const [activeTheme] = useThemeSwitcher();
 
 	return (
 		<motion.section
