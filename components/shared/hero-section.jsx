@@ -1,3 +1,4 @@
+// Hero Section
 
 "use client"; // Adding this directive to make it a Client Component
 
