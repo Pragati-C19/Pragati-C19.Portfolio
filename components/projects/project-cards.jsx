@@ -2,11 +2,12 @@
 
 import { useContext } from 'react';
 import { FiSearch } from 'react-icons/fi';
+import { FaGithub } from 'react-icons/fa';
 import { ProjectsContext } from '../../context/ProjectsContext';
 import ProjectsFilter from './projects-filter';
 import Image from 'next/image';
 import Link from 'next/link';
-import styles from "@/styles/ProjectCards.module.css";
+import styles from "@/styles/ProjectCards.module.css"; // You may keep this for any custom styles
 
 const ProjectCards = () => {
   const {
@@ -29,21 +30,12 @@ const ProjectCards = () => {
     }
   };
 
-  const displayedProjects = getDisplayedProjects();
+  const displayedProjects = getDisplayedProjects()
 
   return (
-    <section className="py-5 sm:py-10 mt-5 sm:mt-10">
-      <div className="text-center mb-10">
-        <p className="font-general-medium text-2xl sm:text-4xl mb-1 text-ternary-dark dark:text-ternary-light">
-          Projects Portfolio
-        </p>
-      </div>
-
-      <div className="mt-10 sm:mt-16">
-        <h3 className="font-general-regular text-center text-secondary-dark dark:text-ternary-light text-md sm:text-xl mb-3">
-          Search projects by title or filter by category
-        </h3>
-        <div className="flex justify-between pb-3 gap-3 mb-6">
+    <>
+      <div className="sm:mt-16">
+        <div className="flex justify-between pb-3 gap-3 mb-6 font-serif">
           <div className="flex justify-between gap-2">
             <span className="hidden sm:block bg-primary-light dark:bg-ternary-dark p-2.5 shadow-sm rounded-xl cursor-pointer">
               <FiSearch className="text-ternary-dark dark:text-ternary-light w-5 h-5" />
@@ -62,44 +54,58 @@ const ProjectCards = () => {
           <ProjectsFilter setSelectProject={setSelectProject} />
         </div>
       </div>
-
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+       {/* Adjust grid layout for two cards per row */}
+       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 font-serif">
         {displayedProjects.map((project) => (
-          <Link
-            href={project.github}
-            key={project.id || project.title}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={`relative w-full h-80 ${styles.cardContainer}`}
-          >
-            <div className={styles.card}>
-              <div className={styles.cardFront}>
-                {project.image && (
-                  <Image
-                    src={project.image}
-                    alt={`${project.title} Screenshot`}
-                    width={500}
-                    height={300}
-                    className={styles.image}
-                    style={{ objectFit: "cover" }}
-                  />
-                )}
-              </div>
-              <div className={styles.cardBack}>
-                <h3 className="text-xl font-semibold text-secondary-dark dark:text-ternary-light">{project.title}</h3>
-                <p className="mt-2 text-gray-600 dark:text-gray-300">{project.description}</p>
-                <div className="mt-4">
-                  <p className="text-sm text-gray-500 dark:text-gray-400"><strong>Category:</strong> {project.category}</p>
-                  <p className="text-sm text-gray-500 dark:text-gray-400"><strong>Technologies:</strong> {project.technologies.join(', ')}</p>
-                  <p className="text-sm text-gray-500 dark:text-gray-400"><strong>Date:</strong> {project.date}</p>
-                  <p className="text-sm text-gray-500 dark:text-gray-400"><strong>Type:</strong> {project.type}</p>
-                </div>
-              </div>
+          <div className="relative flex flex-col my-6 bg-white shadow-sm border border-slate-200 rounded-lg w-full max-w-lg transition-transform transform hover:scale-105">
+            {/* Image on top */}
+            <Link href={project.github}
+    target="_blank"
+    rel="noopener noreferrer" className="relative w-full overflow-hidden rounded-t-md">
+              <Image
+                src={project.image}
+                alt="project-image"
+                width={500}
+                height={300}
+                className="object-fit"
+              />
+            </Link>
+
+            {/* Project details below image */}
+            <div className="p-4 text-center">
+              {/* Category and Type */}
+<div className="mb-4 flex space-x-2 justify-center">
+  <div className="rounded-xl bg-green-500 border border-transparent py-1 px-2 text-xs text-white transition-all shadow-sm text-center">
+    {project.category}
+  </div>
+  <Link
+    href={project.github}
+    target="_blank"
+    rel="noopener noreferrer">
+    <FaGithub className="text-gray-500 hover:text-gray-800 text-2xl" />
+  </Link>
+  <div className="rounded-xl bg-cyan-500 border border-transparent py-1 px-2 text-xs text-white transition-all shadow-sm text-center">
+    {project.type}
+  </div>
+</div>
+
+
+              {/* Project title */}
+              <h6 className="mb-2 text-slate-800 text-xl font-semibold">
+                {project.title}
+              </h6>
+
+              {/* Project description */}
+              <p className="text-slate-600 leading-normal font-light">
+                {project.description}
+              </p>
+
+              <p className="mt-2 text-sm italic text-gray-500">{project.technologies.join(', ')}</p>
             </div>
-          </Link>
+          </div>
         ))}
       </div>
-    </section>
+    </>
   );
 };
 

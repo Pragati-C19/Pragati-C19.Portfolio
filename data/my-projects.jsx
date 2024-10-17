@@ -15,84 +15,84 @@ export const projectsData = [
 		title: 'DokumenHub',
 		category: 'Full Stack Development',
 		image: ProjectImage9,
-		description: 'DokumenHub is a robust document management application that empowers users to create, edit, and manage their documents efficiently',
-		technologies: [ "Next.js(v14)", "Tailwind CSS", "MongoDB", "MySQL", "Firebase"],
+		description: 'DokumenHub is a document management tool allowing users to create, edit, and organize documents efficiently.',
+		technologies: [ "Next.js", "Tailwind CSS", "MongoDB", "MySQL", "Firebase"],
 		github: 'https://github.com/Pragati-C19/DokumenHub',
 		date: 'Sep 2024 - Oct 2024',
-		type: 'Self-Initiated Project'
+		type: 'Independent Work'
 	},
 	{
 		id: 8,
 		title: 'SnackMates | Server-Side',
 		category: 'Full Stack Development',
 		image: ProjectImage8,
-		description: 'SnackMates-Server is a food ordering platform that provides a server-side API to manage restaurants, menus, user favorites, and authentication.',
+		description: 'SnackMates-Server is a server-side API that manages restaurant menus, user favorites, and authentication.',
 		technologies: [ "Node.js", "JWT", "Express.js", "REST APIs"],
 		github: 'https://github.com/Pragati-C19/SnackMates-Server',
 		date: 'Aug 2024 - Aug 2024',
-		type: 'Self-Initiated Project'
+		type: 'Independent Work'
 	},
 	{
 		id: 7,
 		title: 'SnackMates | Client-Side',
 		category: 'Full Stack Development',
 		image: ProjectImage7,
-		description: 'SnackMates-Client is a responsive web application designed to offer a seamless food ordering experience.',
+		description: 'SnackMates-Client is a responsive web app that delivers a seamless food ordering experience for users.',
 		technologies: [ "React.js", "Tailwind CSS", "Figma", "Axios"],
 		github: 'https://github.com/Pragati-C19/SnackMates-Client',
 		date: 'Aug 2024 - Aug 2024',
-		type: 'Self-Initiated Project'
+		type: 'Independent Work'
 	},
 	{
 		id: 6,
 		title: 'BlackJack',
 		category: 'Web Development',
 		image: ProjectImage6,
-		description: 'This is a Blackjack game where the player aims to reach a sum of 21 before the dealer to win.',
+		description: 'A classic Blackjack game where players aim to beat the dealer by reaching a sum of 21 points.',
 		technologies: [ "JavaScript", "Prompt Engineering", "Figma"],
 		github: 'https://github.com/Pragati-C19/BlackJack-Game',
 		date: 'Jul 2024 - Jan 2024',
-		type: 'Self-Initiated Project'
+		type: 'Independent Work'
 	},
 	{
 		id: 5,
 		title: 'Dragamine',
 		category: 'Web Development',
 		image: ProjectImage5,
-		description: 'Dragamine is a simple frontend project inspired by the classic game Minesweeper.',
+		description: 'Dragamine is a frontend project inspired by Minesweeper, featuring a fun twist and custom features.',
 		technologies: [ "JavaScript", "Bootstrap", "Figma"],
 		github: 'https://github.com/Pragati-C19/Dragamine-Game',
 		date: 'Jul 2021 - Jan 2022',
-		type: 'Self-Initiated Project'
+		type: 'Independent Work'
 	},
 	{
 		id: 4,
 		title: 'DeepStash',
 		category: 'UI/UX Design',
 		image: ProjectImage4,
-		description: 'Recreated the Deepstash website, drawn by its sleek and modern UI design',
-		technologies: [ "Figma", "Canva",  "Graphics Design"],
+		description: 'A recreation of the Deepstash website focused on its sleek, modern user interface and interactive elements.',
+		technologies: [ "Figma", "Canva", "Graphics Design"],
 		github: 'https://www.figma.com/proto/WDUKUbKB3YVA00iUKbW83E/DeepStash?node-id=1%3A3&starting-point-node-id=1%3A3',
 		date: 'Sep 2021 - Sep 2021',
-		type: 'Self-Initiated Project'
+		type: 'Independent Work'
 	},
 	{
 		id: 3,
 		title: 'Molequilizer',
 		category: 'UI/UX Design',
 		image: ProjectImage3,
-		description: 'Designed Molequilizer’s UI/UX, creating custom icons and interactive elements to simplify chemistry learning.',
+		description: 'Designed Molequilizer’s UI/UX, building custom icons and interactive features for chemistry learning.',
 		technologies: [ "Figma", "Canva", "Graphics Design"],
 		github: 'https://www.figma.com/proto/KGvg1W2RTsprG8Q6dZooZw/Molequilizer?page-id=0%3A1&node-id=1-2&node-type=canvas&viewport=477%2C421%2C0.08&t=Np6WYlhfn0CYfFye-1&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=1%3A2',
 		date: 'Jan 2021 - Aug 2021',
-		type: 'National MHRD’s Toycathon 2021'
+		type: 'Toycathon 2021'
 	},
 	{
 		id: 2,
 		title: 'Hi-Tech Controls',
 		category: 'Web Development',
 		image: ProjectImage2,
-		description: 'The Hi-Tech project is a dynamic client website developed to enhance the online presence of a technology company.',
+		description: 'Hi-Tech Controls is a client website designed to improve the digital presence of a technology company.',
 		technologies: [ "JavaScript", "HTML5", "Bootstrap", "Figma"],
 		github: 'https://github.com/Pragati-C19/HiTech-New',
 		date: 'Oct 2020 - Oct 2020',
@@ -100,13 +100,14 @@ export const projectsData = [
 	},
 	{
 		id: 1,
-		title: 'DokumenHub',
+		title: 'Prisma Phones',
 		category: 'Web Development',
 		image: ProjectImage1,
-		description: 'The Prisma Phones website is an interactive e-commerce platform designed for users to explore a variety of smartphones and accessories.',
+		description: 'Prisma Phones is an interactive e-commerce platform for browsing smartphones and mobile accessories.',
 		technologies: [ "HTML5", "Bootstrap", "Figma"],
 		github: 'https://github.com/Pragati-C19/Prisma-Phones',
 		date: 'Sep 2020 - Oct 2020',
-		type: 'Self-Initiated Project'
+		type: 'Independent Work'
 	},
 ];
+
