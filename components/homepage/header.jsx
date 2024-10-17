@@ -6,7 +6,8 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { FiDownloadCloud, FiGrid, FiMinimize } from "react-icons/fi";
+import { FiGrid, FiMinimize } from "react-icons/fi";
+import { TbBookDownload } from "react-icons/tb";
 import Logo from "../../public/assets/home-page.png";
 
 const Header = () => {
@@ -38,7 +39,7 @@ const Header = () => {
       animate={{ opacity: 1 }}
       id="nav"
       className="sm:container sm:mx-auto">
-      <div className="z-10 max-w-screen-lg xl:max-w-screen-xl block sm:flex sm:justify-between sm:items-center py-16 px-6 font-serif">
+      <div className="z-10 max-w-screen-lg xl:max-w-screen-xl block sm:flex sm:justify-between sm:items-center py-10 mt-5 px-6 font-serif">
         
         <div className="flex justify-between items-center px-4 sm:px-0">
           <div>
@@ -98,10 +99,11 @@ const Header = () => {
           {/* Download Resume */}
           <Link
             href={"/Pragati-Chothe-SDE-v16-10-2024.pdf"}
+            target="_blank"
             download="Pragati-Chothe-SDE-v16-10-2024.pdf"
-            className="bg-gradient-to-b from-yellow-200 to-pink-300 hover:from-yellow-200 hover:to-pink-200 transition duration-300 rounded-xl text-lg text-gray-700 dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light sm:mx-4 mb-2 sm:mb-0 sm:py-2 p-2 flex items-center shadow-md"
+            className="bg-gradient-to-b from-yellow-200 to-pink-200 hover:from-yellow-200 hover:to-pink-300 transition duration-300 rounded-xl text-lg text-gray-700 dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light sm:mx-4 mb-2 sm:mb-0 sm:py-2 p-2 flex items-center shadow-md"
             aria-label="Download Resume">
-            <FiDownloadCloud className="mr-1 sm:mr-3 h-5 w-5 sm:w-6 sm:h-6 duration-100" />
+            <TbBookDownload className="sm:mr-1 h-5 w-5 sm:w-6 sm:h-6 duration-100" />
             Resume
           </Link>
         </div>
