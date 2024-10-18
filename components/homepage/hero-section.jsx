@@ -41,7 +41,7 @@ const HeroSection = () => {
         </div>
 
         {/* I'm <Type> */}
-        <div className="featured-name text-black text-4xl lg:text-5xl font-bold">
+        <div className="featured-name text-gray-700 text-4xl lg:text-6xl font-bold">
           <p>
             I'm{" "}
             <span className="text-indigo-600 dark:text-indigo-400">{text}</span>
@@ -49,7 +49,7 @@ const HeroSection = () => {
         </div>
 
         {/* Short Description */}
-        <div className="featured-text-info text-lg text-gray-600 dark:text-gray-300">
+        <div className="featured-text-info font-serif text-lg text-gray-600 dark:text-gray-300">
           <p>
             I’m all about aiming for perfection.
             <br />
