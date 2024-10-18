@@ -73,7 +73,7 @@ const HeroSection = () => {
           </Link>
         </div>
 
-        {/* Social Icons //? INFO: Only here you will see the data outside of data folder */}
+        {/* Social Icons //? INFO: You'll only find the data outside the data folder in this instance. */}
         <div className="social_icons flex justify-center md:justify-start space-x-6 mt-6">
           <Link
             href="https://linkedin.com/in/pragati-c19"

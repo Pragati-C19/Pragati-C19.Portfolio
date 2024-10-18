@@ -1,6 +1,6 @@
 // Header Section
 
-"use client"; // Making it a Client Component
+"use client"; // Adding this directive to make it a Client Component
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
