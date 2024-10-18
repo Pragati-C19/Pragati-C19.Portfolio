@@ -1,7 +1,5 @@
 // Project Filter Component for Projects Page
 
-"use client"; // Adding this directive to make it a Client Component
-
 import { filterOptions } from "@/data/my-projects";
 
 const ProjectsFilter = ({ setSelectProject }) => {

@@ -1,7 +1,5 @@
 // Skills Scroller Component for About Me Page
 
-"use client"; // Adding this directive to make it a Client Component
-
 import Marquee from "react-fast-marquee";   // Marquee is used for auto Scrolling
 import { skillsData } from "@/data/about-me";
 

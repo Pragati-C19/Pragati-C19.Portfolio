@@ -1,0 +1,4 @@
+# https://pragatichothe.in/robots.txt
+
+User-agent: *
+Allow: /           # Allow all pages to be crawled

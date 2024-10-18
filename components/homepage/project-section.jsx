@@ -1,7 +1,5 @@
 // Project Section for Home Page
 
-"use client"; // Adding this directive to make it a Client Component
-
 import ProjectCards from "@/components/projects/project-cards";
 import { projectsData } from "@/data/my-projects";
 import Link from "next/link";
@@ -24,7 +22,7 @@ export default function ProjectsSection() {
         <Link
           href={"/projects"}
           className="btn flex items-center text-gray-700 dark:text-gray-300 border-2 border-gray-700 px-4 py-2 rounded-2xl bg-gradient-to-r hover:font-semibold hover:text-gray-600 font-serif transition duration-300"
-          aria-label="More Projects">
+          aria-label="Redirect to Projects Page">
           More Projects <GiArmoredBoomerang className="ml-2" />
         </Link>
       </div>

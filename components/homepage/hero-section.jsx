@@ -1,12 +1,10 @@
 // Hero Section for Homepage
 
-import Image from "next/image";
-import { motion } from "framer-motion";
 import { FiDownloadCloud } from "react-icons/fi";
 import { FaLinkedinIn, FaInstagram, FaGithub } from "react-icons/fa";
-import ProfileImage from "@/public/profile-image.png";
 import Link from "next/link";
 import HeroSkills from "./hero-skills";
+import HeroProfileImage from "./profile-image";
 
 const HeroSection = () => {
   return (
@@ -15,7 +13,7 @@ const HeroSection = () => {
       <div className="text-center md:text-left space-y-6">
         {/* Name Card */}
         <div className="bg-gradient-to-r from-indigo-300 to-purple-400 py-1 px-3 rounded-full shadow-md inline-block">
-          <span className="text-sm font-medium text-white">Pragati Chothe</span>
+          <h1 className="text-sm font-medium text-white">Pragati Chothe</h1>
         </div>
 
         {/* I'm <Type> */}
@@ -73,24 +71,7 @@ const HeroSection = () => {
       </div>
 
       {/* Right Section - Image */}
-      <motion.div
-        animate={{
-          y: [0, -10, 0],
-        }}
-        transition={{
-          duration: 3,
-          repeat: Infinity,
-          ease: "easeInOut",
-        }}
-        className="featured-image w-full md:w-2/5 flex justify-center md:justify-end">
-        <Image
-          src={ProfileImage}
-          alt="Profile Image"
-          width={400}
-          height={400}
-          className="rounded-full shadow-xl"
-        />
-      </motion.div>
+      <HeroProfileImage />
     </section>
   );
 };

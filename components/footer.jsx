@@ -1,7 +1,5 @@
 // Footer Section
 
-"use client"; // Adding this directive to make it a Client Component
-
 import FooterIcon from "@/public/assets/contact-me.png";
 import Image from "next/image";
 import Link from "next/link";
@@ -50,6 +48,7 @@ const Footer = () => {
         {/* Right-aligned social links */}
         <ul className="flex gap-4">
           {socialLinks.map((link) => (
+            <li>
             <Link
               href={link.url}
               target="_blank"
@@ -58,9 +57,11 @@ const Footer = () => {
               style={{
                 background: "linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%)",
                 boxShadow: "0 10px 15px -3px rgba(0, 0, 0, 0.1)",
-              }}>
+              }}
+              aria-label="Footer Links">
               <i className="text-sm sm:text-lg md:text-xl">{link.icon}</i>
             </Link>
+            </li>
           ))}
         </ul>
       </div>

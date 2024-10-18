@@ -45,7 +45,7 @@ const Header = () => {
         <div className="flex justify-between items-center px-4 sm:px-0">
           <div>
             {/* Logo and Project Name */}
-            <Link href="/">
+            <Link href="/" aria-label="Redirect to Homepage">
               <Image
                 src={Logo}
                 alt="Logo"
@@ -58,7 +58,8 @@ const Header = () => {
           </div>
           <Link
             href="/"
-            className="text-2xl font-medium text-primary-dark dark:text-ternary-light font-serif">
+            className="text-2xl font-medium text-primary-dark dark:text-ternary-light font-serif"
+            aria-label="Redirect to Homepage">
             .pragati-c19
           </Link>
 
@@ -87,13 +88,13 @@ const Header = () => {
           <Link
             href={"/projects"}
             className="text-center text-xl text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light sm:mx-4 mb-6 sm:mb-0 sm:py-2 font-serif"
-            aria-label="Projects">
+            aria-label="Redirect to Projects">
             Projects
           </Link>
           <Link
             href={"/about-me"}
             className="text-center text-xl text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light sm:mx-4 mb-6 sm:mb-0 sm:py-2 font-serif"
-            aria-label="About Me">
+            aria-label="Redirect to About Me">
             About Me
           </Link>
 
