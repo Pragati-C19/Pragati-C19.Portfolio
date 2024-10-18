@@ -112,3 +112,8 @@ export const projectsData = [
 	},
 ];
 
+export const selectOptions = [
+	"Full Stack Development",
+	"Web Development",
+	"UI/UX Design",
+];

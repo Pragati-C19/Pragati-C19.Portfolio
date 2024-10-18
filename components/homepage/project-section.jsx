@@ -22,7 +22,7 @@ export default function ProjectsSection() {
       <div className="featured-text-btn flex justify-center md:justify-center mt-10">
           <Link
             href={"/projects"}
-            className="btn flex items-center text-gray-900 dark:text-gray-300 border-2 border-gray-900 px-4 py-2 rounded-2xl hover:bg-gray-300 transition duration-300"
+            className="btn flex items-center text-gray-700 dark:text-gray-300 border-2 border-gray-700 px-4 py-2 rounded-2xl bg-gradient-to-r hover:font-semibold hover:text-gray-600 font-serif transition duration-300"
             aria-label="More Projects">
             More Projects <GiArmoredBoomerang className="ml-2" />
           </Link>

@@ -2,11 +2,7 @@
 
 "use client"; // Adding this directive to make it a Client Component
 
-const selectOptions = [
-  "Full Stack Development",
-  "Web Development",
-  "UI/UX Design",
-];
+import { selectOptions } from "@/data/my-projects";
 
 const ProjectsFilter = ({ setSelectProject }) => {
   return (

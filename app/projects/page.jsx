@@ -16,7 +16,7 @@ const Projects = () => {
   return (
     <section className="bg-gradient-to-b from-blue-100 to-pink-200 p-8">
       <div className="text-center mt-10 mb-10 ">
-        <h1 className="text-4xl sm:text-4xl mb-1 text-ternary-dark dark:text-ternary-light font-bold">
+        <h1 className="text-4xl sm:text-4xl mb-1 text-indigo-600 dark:text-ternary-light font-bold font-serif">
           All Projects
         </h1>
       </div>

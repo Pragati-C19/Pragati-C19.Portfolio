@@ -11,7 +11,7 @@ const ProjectCards = ({ filteredProjects }) => {
     <>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 font-serif">
         {filteredProjects.map((project) => (
-          <div className="relative flex flex-col my-6 bg-white shadow-sm border border-slate-200 rounded-lg w-full max-w-lg transition-transform transform hover:scale-105">
+          <div key={project.id} className="relative flex flex-col my-6 bg-white shadow-sm border border-slate-200 rounded-lg w-full max-w-lg transition-transform transform hover:scale-105">
             {/* Image on top */}
             <Link
               href={project.github}
@@ -31,7 +31,7 @@ const ProjectCards = ({ filteredProjects }) => {
             <div className="p-4 text-center">
               {/* Category and Type */}
               <div className="mb-4 flex space-x-2 justify-center">
-                <div className="rounded-xl bg-green-500 border border-transparent py-1 px-2 text-xs text-white transition-all shadow-sm text-center">
+                <div className="rounded-xl bg-green-500 border border-transparent py-1 px-3 text-xs text-white transition-all shadow-sm font-extralight text-center">
                   {project.category}
                 </div>
                 <Link
@@ -40,7 +40,7 @@ const ProjectCards = ({ filteredProjects }) => {
                   rel="noopener noreferrer">
                   <FaGithub className="text-gray-500 hover:text-gray-800 text-2xl" />
                 </Link>
-                <div className="rounded-xl bg-cyan-500 border border-transparent py-1 px-2 text-xs text-white transition-all shadow-sm text-center">
+                <div className="rounded-xl bg-cyan-500 border border-transparent py-1 px-3 text-xs text-white transition-all font-extralight shadow-sm text-center">
                   {project.type}
                 </div>
               </div>

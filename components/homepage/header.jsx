@@ -39,7 +39,7 @@ const Header = () => {
       animate={{ opacity: 1 }}
       id="nav"
       className="sm:container sm:mx-auto">
-      <div className="z-10 max-w-screen-lg xl:max-w-screen-xl block sm:flex sm:justify-between sm:items-center py-10 mt-5 px-6 font-serif">
+      <div className="z-10 max-w-screen-lg xl:max-w-screen-xl block sm:flex sm:justify-between sm:items-center py-10 mt-5 px-6 font-sans">
         
         <div className="flex justify-between items-center px-4 sm:px-0">
           <div>
@@ -52,13 +52,13 @@ const Header = () => {
                 width={50}
                 height={50}
                 priority={true}
-                className="mr-3"
+                className="mr-3 "
               />
               
             </Link>
           </div>
-          <Link href="/" className="text-2xl font-semibold text-primary-dark dark:text-ternary-light">
-            Pragati-C19
+          <Link href="/" className="text-2xl font-medium text-primary-dark dark:text-ternary-light font-serif">
+            .pragati-c19
           </Link>
 
           {/* Small Screen Menu Icon */}
@@ -85,13 +85,13 @@ const Header = () => {
         >
           <Link
             href={"/projects"}
-            className="text-center text-xl text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light sm:mx-4 mb-6 sm:mb-0 sm:py-2"
+            className="text-center text-xl text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light sm:mx-4 mb-6 sm:mb-0 sm:py-2 font-serif"
             aria-label="Projects">
             Projects
           </Link>
           <Link
             href={"/about-me"}
-            className="text-center text-xl text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light sm:mx-4 mb-6 sm:mb-0 sm:py-2"
+            className="text-center text-xl text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light sm:mx-4 mb-6 sm:mb-0 sm:py-2 font-serif"
             aria-label="About Me">
             About Me
           </Link>

@@ -11,7 +11,7 @@ const SkillsScroller = () => (
       {skillsData.map((skill, index) => (
         <div
           key={index}
-          className="px-4 py-2 border-2 border-gray-700 hover:bg-indigo-200 dark:bg-gray-700 rounded-full mx-2 text-center text-lg text-gray-700 font-medium"
+          className="px-4 py-2 border-2 border-gray-700 bg-gradient-to-tr dark:bg-gray-700 rounded-full mx-2 text-center text-lg text-gray-700 font-medium"
         >
           {skill}
         </div>
