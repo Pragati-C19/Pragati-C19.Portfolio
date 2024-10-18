@@ -6,16 +6,18 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import {FiGrid, FiMinimize } from "react-icons/fi";
+import { FiGrid, FiMinimize } from "react-icons/fi";
 import { TbBookDownload } from "react-icons/tb";
-import Logo from "../../public/assets/home-page.png";
+import Logo from "@/public/assets/home-page.png";
 
 const Header = () => {
   const [showMenu, setShowMenu] = useState(true); // Start with menu hidden on mobile screens
 
   // Use useEffect to update showMenu based on screen size without using window
   useEffect(() => {
-    const mediaQuery = window.matchMedia("(max-width: 640px)"); // Adjust the breakpoint as needed
+    //! WAR: I know using window is wrong, but without it, I'm having issues with showing the menu on laptop or mobile views. If useState is false, the header menu is hidden by default on the laptop; if it's true, the mobile view shows the menu by default.
+
+    const mediaQuery = window.matchMedia("(max-width: 640px)"); // Adjust the breakpoint here
 
     const handleMediaQueryChange = () => {
       setShowMenu(!mediaQuery.matches);
@@ -40,10 +42,8 @@ const Header = () => {
       id="nav"
       className="sm:container sm:mx-auto">
       <div className="z-10 max-w-screen-lg xl:max-w-screen-xl block sm:flex sm:justify-between sm:items-center py-10 mt-5 px-6 font-sans">
-        
         <div className="flex justify-between items-center px-4 sm:px-0">
           <div>
-
             {/* Logo and Project Name */}
             <Link href="/">
               <Image
@@ -54,10 +54,11 @@ const Header = () => {
                 priority={true}
                 className="mr-3 "
               />
-              
             </Link>
           </div>
-          <Link href="/" className="text-2xl font-medium text-primary-dark dark:text-ternary-light font-serif">
+          <Link
+            href="/"
+            className="text-2xl font-medium text-primary-dark dark:text-ternary-light font-serif">
             .pragati-c19
           </Link>
 

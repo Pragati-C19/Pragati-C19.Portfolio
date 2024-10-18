@@ -1,6 +1,6 @@
 // Projects Page
 
-"use client"; // Making it a Client Component
+"use client"; // Adding this directive to make it a Client Component
 
 import { useState } from "react";
 import ProjectCards from "@/components/projects/project-cards";
@@ -25,7 +25,7 @@ const Projects = () => {
         <SearchProjects setFilteredProjects={setFilteredProjects} />
 
         {/* Display Filtered Projects */}
-        <ProjectCards filteredProjects={filteredProjects} />
+        <ProjectCards projects={filteredProjects} />
       </div>
     </section>
   );

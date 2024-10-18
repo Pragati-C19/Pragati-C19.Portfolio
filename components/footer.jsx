@@ -2,49 +2,10 @@
 
 "use client"; // Adding this directive to make it a Client Component
 
-import {
-  FiGithub,
-  FiLinkedin,
-  FiChrome,
-  FiInstagram,
-  FiDribbble,
-} from "react-icons/fi";
-import { SiLichess } from "react-icons/si";
-import FooterIcon from "../../public/assets/contact-me.png";
+import FooterIcon from "@/public/assets/contact-me.png";
 import Image from "next/image";
-
-const socialLinks = [
-  {
-    id: 1,
-    icon: <FiChrome />,
-    url: "https://pragatichothe.in/",
-  },
-  {
-    id: 2,
-    icon: <FiGithub />,
-    url: "https://github.com/Pragati-C19",
-  },
-  {
-    id: 3,
-    icon: <FiLinkedin />,
-    url: "https://linkedin.com/in/pragati-c19",
-  },
-  {
-    id: 4,
-    icon: <FiInstagram />,
-    url: "https://www.instagram.com/pragati_c19/",
-  },
-  {
-    id: 5,
-    icon: <FiDribbble />,
-    url: "https://dribbble.com/pragati_c19",
-  },
-  {
-    id: 6,
-    icon: <SiLichess />,
-    url: "https://lichess.org/@/Pragati_C19",
-  },
-];
+import Link from "next/link";
+import { socialLinks } from "@/data/about-me";
 
 const Footer = () => {
   return (
@@ -54,12 +15,13 @@ const Footer = () => {
         <p className="text-7xl text-primary-dark dark:text-primary-light mb-10 text-center font-extrabold">
           Say Hello.
         </p>
+
         {/* Footer Icon */}
         <div className="mb-4">
           <Image
             src={FooterIcon}
             alt="Footer Icon"
-            width={200} // Adjust the size as needed
+            width={200} 
             height={200}
           />
         </div>
@@ -73,8 +35,7 @@ const Footer = () => {
           <span>
             pragatichothe@gmail.com |{" "}
             <span className="font-sans">+91 9021927662</span>
-          </span>{" "}
-          {/* Replace with your number */}
+          </span>
         </button>
       </div>
 
@@ -89,7 +50,7 @@ const Footer = () => {
         {/* Right-aligned social links */}
         <ul className="flex gap-4">
           {socialLinks.map((link) => (
-            <a
+            <Link
               href={link.url}
               target="_blank"
               key={link.id}
@@ -99,7 +60,7 @@ const Footer = () => {
                 boxShadow: "0 10px 15px -3px rgba(0, 0, 0, 0.1)",
               }}>
               <i className="text-sm sm:text-lg md:text-xl">{link.icon}</i>
-            </a>
+            </Link>
           ))}
         </ul>
       </div>

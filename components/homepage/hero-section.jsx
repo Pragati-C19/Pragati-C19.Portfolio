@@ -1,4 +1,4 @@
-// Hero Section
+// Hero Section for Homepage
 
 "use client"; // Adding this directive to make it a Client Component
 
@@ -7,22 +7,22 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { FiDownloadCloud } from "react-icons/fi";
 import { FaLinkedinIn, FaInstagram, FaGithub } from "react-icons/fa";
-import ProfileImage from "@/public/profile-image.png"; // Replace with your actual image
+import ProfileImage from "@/public/profile-image.png";
 import Link from "next/link";
+import { heroSkills } from "@/data/about-me";
 
 const HeroSection = () => {
   const [text, setText] = useState("");
   const [index, setIndex] = useState(0);
-  const words = ["Full-Stack Developer", "UI/UX Designer"];
 
   useEffect(() => {
     const timeout = setTimeout(() => {
-      setText(words[index].substring(0, text.length + 1));
-      if (text === words[index]) {
+      setText(heroSkills[index].substring(0, text.length + 1));
+      if (text === heroSkills[index]) {
         setTimeout(() => {
-          setIndex((prevIndex) => (prevIndex + 1) % words.length);
+          setIndex((prevIndex) => (prevIndex + 1) % heroSkills.length);
           setText("");
-        }, 2000); // Pause for 2 seconds before switching words
+        }, 2000); // Pause for 2 seconds before switching heroSkills
       }
     }, 150);
 
@@ -35,9 +35,7 @@ const HeroSection = () => {
       <div className="text-center md:text-left space-y-6">
         {/* Name Card */}
         <div className="bg-gradient-to-r from-indigo-300 to-purple-400 py-1 px-3 rounded-full shadow-md inline-block">
-          <span className="text-sm font-medium text-white">
-            Pragati Chothe
-          </span>
+          <span className="text-sm font-medium text-white">Pragati Chothe</span>
         </div>
 
         {/* I'm <Type> */}
@@ -63,7 +61,7 @@ const HeroSection = () => {
           </p>
         </div>
 
-        {/* Buttons */}
+        {/* Download CV Button */}
         <div className="featured-text-btn flex justify-center md:justify-start space-x-4 mt-4">
           <Link
             href={"/Pragati-Chothe-SDE-v16-10-2024.pdf"}
@@ -75,7 +73,7 @@ const HeroSection = () => {
           </Link>
         </div>
 
-        {/* Social Icons */}
+        {/* Social Icons //? INFO: Only here you will see the data outside of data folder */}
         <div className="social_icons flex justify-center md:justify-start space-x-6 mt-6">
           <Link
             href="https://linkedin.com/in/pragati-c19"

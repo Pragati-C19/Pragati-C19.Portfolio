@@ -1,11 +1,10 @@
-// Custom Hook for Project
+// Custom Hook for Projects Page
 
 "use client"; // Adding this directive to make it a Client Component
 
 import { useState, useMemo } from "react";
-import { projectsData } from "../data/my-projects";
+import { projectsData } from "@/data/my-projects";
 
-// Create the custom hook
 export const useProjects = () => {
   const [projects, setProjects] = useState(projectsData);
   const [searchProject, setSearchProject] = useState("");

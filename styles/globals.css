@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* TODO: Adding Responsive CSS is Remaining */
-
 :root {
   --background: #dbeafe;
   --foreground: #ededed;

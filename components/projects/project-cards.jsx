@@ -1,17 +1,19 @@
-// Projects Card Component
+// Projects Card Component for Projects Page
 
-"use client"; // Making it a Client Component
+"use client"; // Adding this directive to make it a Client Component
 
 import { FaGithub } from "react-icons/fa";
 import Image from "next/image";
 import Link from "next/link";
 
-const ProjectCards = ({ filteredProjects }) => {
+const ProjectCards = ({ projects }) => {
   return (
     <>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 font-serif">
-        {filteredProjects.map((project) => (
-          <div key={project.id} className="relative flex flex-col my-6 bg-white shadow-sm border border-slate-200 rounded-lg w-full max-w-lg transition-transform transform hover:scale-105">
+        {projects.map((project) => (
+          <div
+            key={project.id}
+            className="relative flex flex-col my-6 bg-white shadow-sm border border-slate-200 rounded-lg w-full max-w-lg transition-transform transform hover:scale-105">
             {/* Image on top */}
             <Link
               href={project.github}

@@ -1,9 +1,9 @@
 // RootLayout for all pages.
 
 import React from "react";
-import "../styles/globals.css";
-import Header from "@/components/homepage/header";
-import Footer from "@/components/homepage/footer";
+import "@/styles/globals.css";
+import Header from "@/components/header";
+import Footer from "@/components/footer";
 
 export const metadata = {
   title: "Pragati Chothe | Full Stack Developer and UI/UX Designer",
