@@ -7,7 +7,7 @@ const About = () => {
   return (
     <div className="container mx-auto bg-gradient-to-b from-blue-100 to-pink-200 py-10">
       <h1 className="text-3xl font-bold text-indigo-600 text-center p-10 font-serif">
-        Hola!... I'm Pragati Chothe 🙂{" "}
+        {" Hola!... I'm Pragati Chothe 🙂 "}
       </h1>
       <AboutMeBio />
       <SkillsScroller />

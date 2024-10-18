@@ -48,11 +48,10 @@ const Footer = () => {
         {/* Right-aligned social links */}
         <ul className="flex gap-4">
           {socialLinks.map((link) => (
-            <li>
+            <li key={link.id}>
             <Link
               href={link.url}
               target="_blank"
-              key={link.id}
               className="text-gray-400 hover:text-black dark:hover:text-white cursor-pointer rounded-full p-2 duration-300 transform transition-all hover:scale-110"
               style={{
                 background: "linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%)",
