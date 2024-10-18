@@ -1,4 +1,5 @@
-// Import images
+// All Project Data
+
 import ProjectImage9 from '../public/projects/dokumenhub.png';
 import ProjectImage8 from '../public/projects/snackmates-server.png';
 import ProjectImage7 from '../public/projects/snackmates-client.png';

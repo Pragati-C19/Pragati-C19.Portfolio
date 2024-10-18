@@ -1,3 +1,4 @@
+// About Me Bio Component
 
 "use client"; // Adding this directive to make it a Client Component
 
@@ -22,7 +23,7 @@ const AboutMeBio = () => {
 	  };
 
 	return (
-		<div className="block sm:flex sm:gap-10 mt-10 sm:mt-20 py-7">
+		<div className="block sm:flex sm:gap-10 py-7">
 			{/* Image Section with Framer Motion */}
 			<div className="w-full sm:w-1/3 mb-7 sm:mb-0">
         <motion.div
@@ -37,15 +38,19 @@ const AboutMeBio = () => {
         </motion.div>
       </div>
 
-			<div className="font-general-regular w-full p-6 sm:w-3/4 text-left font-serif">
-			<h2 className="text-3xl font-bold mb-8 text-indigo-500">Hola!... I'm Pragati Chothe 🙂 </h2>
+			<div className="font-general-regular w-full p-5 sm:w-3/4 text-left font-serif">
 				{aboutMe.map((bio) => (
-					<p
-						className="mb-4 text-ternary-dark dark:text-ternary-light text-lg"
-						key={bio.id}
-					>
-						{bio.info}
+				<div className="mb-4 text-ternary-dark dark:text-ternary-light text-lg" key={bio.id}>
+				<div className="flex items-start">
+				  <span className="text-2xl mr-2">{bio.icon}</span> {/* Increase icon size */}
+				  <div>
+					<h2 className="font-bold font-serif">{bio.title}</h2>
+					<p className="mt-1 font-sans">
+					  {bio.info}
 					</p>
+				  </div>
+				</div>
+			  </div>
 				))}
 			</div>
 		</div>
