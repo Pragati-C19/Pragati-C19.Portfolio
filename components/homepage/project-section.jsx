@@ -1,6 +1,6 @@
 // Project Section for Home Page
 
-import ProjectCards from "@/components/projects/project-cards";
+import ProjectCards from "@/components/projects/projects-cards";
 import { projectsData } from "@/data/my-projects";
 import Link from "next/link";
 import { GiArmoredBoomerang } from "react-icons/gi";

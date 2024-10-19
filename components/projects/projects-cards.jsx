@@ -7,11 +7,11 @@ import Link from "next/link";
 const ProjectCards = ({ projects }) => {
   return (
     <>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 font-serif">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 font-serif">
         {projects.map((project) => (
           <div
             key={project.id}
-            className="relative flex flex-col my-6 bg-white shadow-sm border border-slate-200 rounded-lg w-full max-w-lg transition-transform transform hover:scale-105">
+            className="relative flex flex-col my-6 bg-white shadow-sm border border-slate-200 rounded-lg w-full transition-transform transform hover:scale-105">
             {/* Image on top */}
             <Link
               href={project.github}
@@ -24,18 +24,17 @@ const ProjectCards = ({ projects }) => {
                 alt="project-image"
                 width={500}
                 height={300}
-                className="object-fit"
+                className="object-cover w-full h-48"
               />
             </Link>
 
             {/* Project details below image */}
             <div className="p-4 text-center">
-
               {/* Project title */}
-              <h6 className="mb-4 mt-4 text-slate-800 text-xl font-semibold">
+              <h1 className="mb-4 mt-4 text-slate-800 text-lg sm:text-xl font-semibold">
                 {project.title}
-              </h6>
-              
+              </h1>
+
               {/* Category and Type */}
               <div className="mb-4 flex space-x-2 justify-center">
                 <div className="rounded-xl bg-green-200 text-green-800 border border-transparent py-1 px-3 text-xs transition-all shadow-sm font-extralight text-center">
@@ -54,12 +53,12 @@ const ProjectCards = ({ projects }) => {
               </div>
 
               {/* Project description */}
-              <p className="text-slate-600 leading-normal font-light">
+              <p className="text-slate-600 leading-normal font-light text-sm sm:text-base">
                 {project.description}
               </p>
 
               {/* Project tech */}
-              <p className="mt-4 mb-4 text-sm italic text-gray-500">
+              <p className="mt-4 mb-4 text-xs sm:text-sm italic text-gray-500">
                 {project.technologies.join(", ")}
               </p>
             </div>
