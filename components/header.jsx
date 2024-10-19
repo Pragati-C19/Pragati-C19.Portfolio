@@ -35,6 +35,14 @@ const Header = () => {
     setShowMenu(!showMenu);
   };
 
+  // Function to hide the menu when a link is clicked (for mobile view)
+  const handleLinkClick = () => {
+    const mediaQuery = window.matchMedia("(max-width: 640px)"); // Check if mobile view
+    if (mediaQuery.matches) {
+      setShowMenu(false); // Hide menu after clicking a link in mobile view
+    }
+  };
+
   return (
     <motion.nav
       initial={{ opacity: 0 }}
@@ -52,7 +60,7 @@ const Header = () => {
                 width={50}
                 height={50}
                 priority={true}
-                className="mr-3 "
+                className="mr-3"
               />
             </Link>
           </div>
@@ -88,13 +96,15 @@ const Header = () => {
           <Link
             href={"/projects"}
             className="text-center text-xl text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light sm:mx-4 mb-6 sm:mb-0 sm:py-2 font-serif"
-            aria-label="Redirect to Projects">
+            aria-label="Redirect to Projects"
+            onClick={handleLinkClick}>
             Projects
           </Link>
           <Link
             href={"/about-me"}
             className="text-center text-xl text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light sm:mx-4 mb-6 sm:mb-0 sm:py-2 font-serif"
-            aria-label="Redirect to About Me">
+            aria-label="Redirect to About Me"
+            onClick={handleLinkClick}>
             About Me
           </Link>
 
@@ -104,7 +114,8 @@ const Header = () => {
             target="_blank"
             download="Pragati-Chothe-SDE-v16-10-2024.pdf"
             className="bg-gradient-to-b from-yellow-200 to-pink-200 hover:from-yellow-200 hover:to-pink-300 transition duration-300 rounded-xl text-lg text-gray-700 dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light sm:mx-4 mb-2 sm:mb-0 sm:py-2 p-2 flex items-center shadow-md"
-            aria-label="Download Resume">
+            aria-label="Download Resume"
+            onClick={handleLinkClick}>
             <TbBookDownload className="sm:mr-1 h-5 w-5 sm:w-6 sm:h-6 duration-100" />
             Resume
           </Link>
