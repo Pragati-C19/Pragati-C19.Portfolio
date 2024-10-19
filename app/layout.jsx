@@ -7,7 +7,7 @@ import Footer from "@/components/footer";
 
 export const metadata = {
   title: "Pragati Chothe | Full Stack Developer and UI/UX Designer",
-  description: "Pragati Chothe's Portfolio",
+  description: "Explore my portfolio! I’m Pragati, a Full Stack Developer and UI/UX Designer with 2 years of experience. I specialize in HTML, CSS, JavaScript, React.js, Next.js, Node.js, Express.js, MongoDB, MySQL, and Firebase. My projects include Hi-tech, DokumenHub, Snackmate, and the Pokémon-themed Dragamine game. I’m passionate about learning new technologies, currently focusing on Docker. Connect with me for exciting collaborations!",
   keywords:
     "Freelancer, Full Stack Developer, UI Designer, Web Developer, UX Designer, Frontend Developer, Backend Developer, MERN Stack Developer, Responsive Web Designer",
   openGraph: {
@@ -32,7 +32,7 @@ const structuredData = {
   name: "Pragati Chothe",
   url: "https://pragatichothe.in/", // live URL
   image: "https://pragatichothe.in/profile-image.png", // Your image URL
-  description: "Full Stack Developer and UI/UX Designer.",
+  description: "Explore my portfolio! I’m Pragati, a Full Stack Developer and UI/UX Designer with 2 years of experience. I specialize in HTML, CSS, JavaScript, React.js, Next.js, Node.js, Express.js, MongoDB, MySQL, and Firebase. My projects include Hi-tech, DokumenHub, Snackmate, and the Pokémon-themed Dragamine game. I’m passionate about learning new technologies, currently focusing on Docker. Connect with me for exciting collaborations!",
   sameAs: [
     "https://linkedin.com/in/pragati-c19",
     "https://github.com/Pragati-C19",
