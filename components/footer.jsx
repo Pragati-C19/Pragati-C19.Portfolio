@@ -7,42 +7,45 @@ import { socialLinks } from "@/data/about-me";
 
 const Footer = () => {
   return (
-    <div className="container mx-auto h-[90vh] flex flex-col justify-center items-center bg-blue-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200 font-serif p-10">
+    <div className="container mx-auto min-h-[80vh] flex flex-col justify-center items-center bg-blue-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200 font-serif p-6 sm:p-10">
       {/* Say Hello and Footer Icon */}
       <div className="flex flex-col items-center mb-8">
-        <p className="sm:text-7xl text-5xl text-primary-dark dark:text-primary-light mb-10 text-center sm:font-extrabold font-bold">
+        <p className="text-4xl sm:text-6xl text-primary-dark dark:text-primary-light mb-6 text-center font-bold">
           Say Hello.
         </p>
 
         {/* Footer Icon */}
-        <div className="mb-4">
+        <div className="mb-6">
           <Image
             src={FooterIcon}
             alt="Footer Icon"
-            width={200} 
-            height={200}
+            width={150}
+            height={150}
+            className="sm:w-[200px] sm:h-[200px] w-[150px] h-[150px]"
           />
         </div>
       </div>
 
       {/* Contact Section */}
-<div className="flex justify-center mb-8">
-  <button
-    className="flex flex-col sm:flex-row items-center border-2 border-gray-600 bg-white transition duration-300 rounded-full font-serif text-gray-700 dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light p-3 shadow-md"
-    aria-label="Contact"
-  >
-    <span className="text-center sm:text-left">
-      pragatichothe@gmail.com
-    </span>
-    <span className="font-sans sm:ml-2 sm:border-l sm:border-gray-400 sm:pl-2 text-center sm:text-left">
-      +91 9021927662
-    </span>
-  </button>
-</div>
+      <div className="flex justify-center mb-8">
+        <button
+          className="flex flex-col sm:flex-row items-center border-2 border-gray-600 bg-white transition duration-300 rounded-full font-serif text-gray-700 dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light px-4 py-2 shadow-md"
+          aria-label="Contact">
+          {/* Email (Stacked in mobile) */}
+          <span className="text-center sm:text-left">
+            pragatichothe@gmail.com
+          </span>
 
+          {/* Phone (Stacks under email in mobile) */}
+          <span className="font-sans sm:ml-2 sm:border-l sm:border-gray-400 sm:pl-2 mt-2 sm:mt-0 text-center sm:text-left">
+            +91 9021927662
+          </span>
+        </button>
+      </div>
 
       {/* Copyright line and social links */}
-      <div className="flex justify-center items-center w-full max-w-6xl pt-6">
+      <div className="w-full max-w-6xl flex justify-center pt-6">
+        {/* Social Links Section */}
         <div className="flex gap-4 flex-wrap justify-center">
           {socialLinks.map((link) => (
             <Link
