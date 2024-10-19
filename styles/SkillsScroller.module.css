@@ -1,0 +1,4 @@
+.my10 {
+  -webkit-font-smoothing: antialiased; /* For webkit browsers (Chrome, Safari) */
+  -moz-osx-font-smoothing: grayscale; /* For Firefox on macOS */
+}

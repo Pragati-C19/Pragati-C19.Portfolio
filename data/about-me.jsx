@@ -4,6 +4,7 @@ import { RiCodeSSlashLine } from "react-icons/ri";
 import { RiFlowChart } from "react-icons/ri";
 import { IoIosColorWand } from "react-icons/io";
 import { PiCirclesThree } from "react-icons/pi";
+import { SiFreelancer } from "react-icons/si";
 import { SiLichess } from "react-icons/si";
 import {
   FiGithub,
@@ -37,6 +38,12 @@ export const aboutMeData = [
     icon: <IoIosColorWand />,
     title: "Continuous Learner",
     info: "I’m committed to expanding my expertise and staying updated with the latest trends in technology and design. I'm always learning new tech to stay ahead of the game.",
+  },
+  {
+    id: 5,
+    icon: <SiFreelancer />,
+    title: "Freelancing & Collaboration",
+    info: "Currently freelancing, I'm on the lookout for exciting new projects and collaborations, ensuring that everything I do is top-notch with a strong work ethic.",
   },
 ];
 

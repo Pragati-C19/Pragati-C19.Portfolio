@@ -9,22 +9,29 @@ const AboutMeBio = () => {
   const { aboutMe } = useAboutMe();
 
   return (
-    <div className="block sm:flex sm:gap-10 py-7">
+    <div className="block lg:flex lg:gap-10 py-7 px-4 md:px-8">
       {/* Image Section with Framer Motion */}
-      <div className="w-full sm:w-1/3 mb-7 sm:mb-0">
+      <div className="w-full lg:w-1/3 mb-7 lg:mb-0">
         <AboutBioImage />
       </div>
 
-      <div className="font-general-regular w-full p-5 sm:w-3/4 text-left font-serif">
+      {/* Text Section */}
+      <div className="font-general-regular w-full lg:w-2/3 text-left font-serif">
         {aboutMe.map((bio) => (
           <div
-            className="mb-4 text-ternary-dark dark:text-ternary-light text-lg"
+            className="mb-6 lg:mb-8 text-ternary-dark dark:text-ternary-light text-base md:text-lg lg:text-xl"
             key={bio.id}>
             <div className="flex items-start">
-              <span className="text-2xl mr-2">{bio.icon}</span>{" "}
+              <span className="text-xl md:text-2xl lg:text-3xl mr-4">
+                {bio.icon}
+              </span>
               <div>
-                <h2 className="font-bold font-serif">{bio.title}</h2>
-                <p className="mt-1 font-serif">{bio.info}</p>
+                <h2 className="font-bold font-serif text-lg md:text-xl lg:text-2xl">
+                  {bio.title}
+                </h2>
+                <p className="mt-1 text-sm md:text-base lg:text-lg">
+                  {bio.info}
+                </p>
               </div>
             </div>
           </div>

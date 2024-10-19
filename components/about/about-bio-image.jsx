@@ -1,3 +1,4 @@
+// ABout Me Image Animation
 
 "use client"; // Adding this directive to make it a Client Component
 
@@ -6,7 +7,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 export default function AboutBioImage() {
-    // Floating animation setup
+  // Floating animation setup
   const floatAnimation = {
     y: [0, -10, 0], // Moves up and down by 10px
     transition: {
@@ -19,14 +20,14 @@ export default function AboutBioImage() {
 
   return (
     <motion.div
-          className="relative w-full max-w-xs mx-auto"
-          animate={floatAnimation} // Apply the floating animation
-        >
-          <Image
-            src={AboutImage}
-            className="transform hover:scale-105 transition-transform duration-500"
-            alt="About Me Image"
-          />
-        </motion.div>
-  )
+      className="relative w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg mx-auto"
+      animate={floatAnimation} // Apply the floating animation
+    >
+      <Image
+        src={AboutImage}
+        className="transform hover:scale-105 transition-transform duration-500"
+        alt="About Me Image"
+      />
+    </motion.div>
+  );
 }
