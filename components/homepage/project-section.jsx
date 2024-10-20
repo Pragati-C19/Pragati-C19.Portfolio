@@ -11,7 +11,7 @@ export default function ProjectsSection() {
   return (
     <div className="py-40">
       <h1 className="text-4xl text-gray-700 font-sans font-bold text-center mb-20">
-        Explore What I’ve Built
+        Explore The Built
       </h1>
 
       {/* Display Filtered Projects */}
