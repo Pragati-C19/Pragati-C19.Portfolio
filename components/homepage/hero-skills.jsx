@@ -1,4 +1,4 @@
-// Hero Skills Component for Hero Section 
+// Hero Skills Component for Hero Section
 
 "use client"; // Adding this directive to make it a Client Component
 
@@ -6,7 +6,7 @@ import { heroSkills } from "@/data/about-me";
 import { useState, useEffect } from "react";
 
 export default function HeroSkills() {
-    const [text, setText] = useState("");
+  const [text, setText] = useState("");
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
@@ -25,10 +25,10 @@ export default function HeroSkills() {
 
   return (
     <div className="featured-name text-gray-700 text-3xl lg:text-6xl font-bold">
-          <p>
-            {" I'm "}
-            <span className="text-indigo-600 dark:text-indigo-400">{text}</span>
-          </p>
+      <p>
+        {" I'm "}
+        <span className="text-indigo-600 dark:text-indigo-400">{text}</span>
+      </p>
     </div>
-  )
+  );
 }

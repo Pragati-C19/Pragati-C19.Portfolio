@@ -1,4 +1,4 @@
-// ABout Me Image Animation
+// About Me Image Animation
 
 "use client"; // Adding this directive to make it a Client Component
 
@@ -25,7 +25,7 @@ export default function AboutBioImage() {
     >
       <Image
         src={AboutImage}
-        width={2000} 
+        width={2000}
         height={3100}
         className="w-full h-auto transform hover:scale-105 transition-transform duration-500"
         alt="About Me Image"
