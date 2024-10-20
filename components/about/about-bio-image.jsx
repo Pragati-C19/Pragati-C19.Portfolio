@@ -25,7 +25,9 @@ export default function AboutBioImage() {
     >
       <Image
         src={AboutImage}
-        className="transform hover:scale-105 transition-transform duration-500"
+        width={2000} 
+        height={3100}
+        className="w-full h-auto transform hover:scale-105 transition-transform duration-500"
         alt="About Me Image"
       />
     </motion.div>

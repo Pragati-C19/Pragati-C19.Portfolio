@@ -16,9 +16,9 @@ const Projects = () => {
           <Image
             src={ProjectImage}
             alt="Project Image"
-            width={90}
-            height={90}
-            className="my-4 sm:my-0 sm:ml-8 sm:mr-8 w-24 sm:w-32 lg:w-40"
+            width={2500}
+            height={2100}
+            className="my-4 sm:my-0 sm:ml-8 sm:mr-8 w-28 sm:w-32 lg:w-40"
           />
           <h1 className="text-4xl sm:text-5xl mb-1 text-indigo-600 dark:text-ternary-light font-bold font-serif">
             Carnival

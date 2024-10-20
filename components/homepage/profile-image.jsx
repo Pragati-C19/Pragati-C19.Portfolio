@@ -20,9 +20,9 @@ export default function HeroProfileImage() {
         <Image
           src={ProfileImage}
           alt="Profile Image"
-          width={400}
-          height={400}
-          className="rounded-full shadow-xl"
+          width={5000}
+          height={5000}
+          className="w-full h-auto rounded-full shadow-xl"
         />
       </motion.div>
   )

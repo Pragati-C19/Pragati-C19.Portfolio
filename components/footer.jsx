@@ -19,8 +19,8 @@ const Footer = () => {
           <Image
             src={FooterIcon}
             alt="Footer Icon"
-            width={150}
-            height={150}
+            width={1000}
+            height={1000}
             className="sm:w-[200px] sm:h-[200px] w-[150px] h-[150px] object-contain aspect-[108/100]"
           />
         </div>

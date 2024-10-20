@@ -57,10 +57,10 @@ const Header = () => {
               <Image
                 src={Logo}
                 alt="Logo"
-                width={50}
-                height={50}
+                width={2500}
+                height={2500}
                 priority={true}
-                className="mr-3"
+                className="mr-3 w-12 h-12 sm:w-12 sm:h-12 md:w-12 md:h-12 lg:w-12 lg:h-12"
               />
             </Link>
           </div>
