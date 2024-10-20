@@ -1,4 +1,9 @@
-# https://pragatichothe.in/robots.txt
-
+# *
 User-agent: *
-Allow: /           # Allow all pages to be crawled
+Allow: /
+
+# Host
+Host: https://pragatichothe.in
+
+# Sitemaps
+Sitemap: https://pragatichothe.in/sitemap.xml
